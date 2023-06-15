@@ -7,5 +7,8 @@ pipeline {
                 echo 'hello test'
             }
         }
+stage("build") {
+		  sh 'gradlew clean build'
+		}
     }
 }
