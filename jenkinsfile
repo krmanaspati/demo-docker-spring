@@ -19,7 +19,7 @@ steps {
 }
 stage("Build Docker File") {
 steps {
-		   bat 'docker build -t docker-demo .'
+		   bat 'docker build . -f Dockerfile.base -t docker-demo '
 		}
 }
     }
